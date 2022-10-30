@@ -6,7 +6,7 @@ steps:
     args:
       - '-c'
       - |-
-         export DBT_PROFILES_DIR=./profiles/
+         export DBT_PROFILES_DIR=./profiles/profiles.yml
          dbt debug --config-dir
          dbt deps --profiles-dir .
          if [[ $? == 1 ]]; then
