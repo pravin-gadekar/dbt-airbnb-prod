@@ -1,0 +1,13 @@
+dbt_airbnb_prod:
+  outputs:
+    dev:
+      dataset: airbnb
+      job_execution_timeout_seconds: 30
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: dbt-airbnb-prod
+      threads: 4
+      type: bigquery
+  target: dev
