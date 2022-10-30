@@ -8,6 +8,7 @@ steps:
       - |-
          pwd
          ls
+         xdg-open /workspace/profiles/profiles.yml
          export DBT_PROFILES_DIR=./profiles/profiles.yml
          dbt debug --config-dir
          dbt deps --profiles-dir .
