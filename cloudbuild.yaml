@@ -6,8 +6,6 @@ steps:
     args:
       - '-c'
       - |-
-         pwd
-         ls
          dbt deps --profiles-dir .
          if [[ $? == 1 ]]; then
           echo '1'
