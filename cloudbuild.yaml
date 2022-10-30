@@ -6,6 +6,8 @@ steps:
     args:
       - '-c'
       - |-
+         pwd
+         ls
          export DBT_PROFILES_DIR=./profiles/profiles.yml
          dbt debug --config-dir
          dbt deps --profiles-dir .
