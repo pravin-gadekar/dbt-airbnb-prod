@@ -27,5 +27,4 @@ steps:
           exit 1
          fi       
     timeout: 1200s
-    tags: ['dbt']
   
