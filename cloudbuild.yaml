@@ -1,7 +1,7 @@
 # gcloud builds submit --config=cloudbuild.yaml .
 steps:
   - id: '1 Run dbt'
-    name: 'xemuliam/dbt'
+    name: 'fishtownanalytics/dbt:1.0.0'
     entrypoint: 'bash'
     args:
       - '-c'
