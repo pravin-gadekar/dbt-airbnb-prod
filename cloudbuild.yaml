@@ -6,7 +6,6 @@ steps:
     args:
       - '-c'
       - |-
-         dbt seed
          dbt deps --profiles-dir .
          if [[ $? == 1 ]]; then
           echo '1'
