@@ -4,7 +4,6 @@ dbt_airbnb_prod:
       dataset: airbnb
       job_execution_timeout_seconds: 30
       job_retries: 1
-      location: US
       method: oauth
       priority: interactive
       project: dbt-airbnb-prod
