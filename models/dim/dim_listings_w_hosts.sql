@@ -29,4 +29,4 @@ FROM
     LEFT JOIN h
     ON (
         h.host_id = l.host_id
-    ) {{ dbt_utils.log_info("Processed dim_listings_w_hosts") }}
+    )
